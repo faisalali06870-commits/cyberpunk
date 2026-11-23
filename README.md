@@ -2,40 +2,48 @@
 
 An interactive 3D web application built with **Three.js**, **GSAP**, and **Vite**.
 
-## Features
+![Project Demo](./demo-screenshot.png)
 
-- **3D Model Rendering**: Realistic PBR rendering of a sci-fi helmet using `GLTFLoader`.
-- **HDRI Environment Lighting**: Realistic reflections and ambient environment from Polyhaven HDRI via `RGBELoader`.
-- **Post-Processing**: Chromatic aberration and RGB shift effect using Three.js `EffectComposer` and `RGBShiftShader`.
-- **Interactive Mouse Tracking**: Smooth model tilt and rotation responding to mouse cursor position powered by `GSAP`.
-- **3D Navigation**: Full scene examination support with `OrbitControls`.
-- **Modern UI**: Dark futuristic landing page styled with Tailwind CSS.
+## 🌐 Live Demo
+🔗 **[Live Website Preview](https://faisalali06870-commits.github.io/cyberpunk/)**
 
-## Getting Started
+---
+
+## 📌 Project Overview
+Cyberpunk is a futuristic interactive 3D landing page experience. It renders a high-fidelity 3D Damaged Helmet model in WebGL with realistic PBR textures, reflective HDRI environment lighting, custom post-processing chromatic aberration glitch shaders, and interactive cursor tilt animations.
+
+---
+
+## 🛠️ Technology Stack
+- **Three.js (`^0.185.1`)**: 3D scene creation, camera rendering, GLTFLoader, RGBELoader, OrbitControls.
+- **GSAP (`^3.15.0`)**: Smooth cursor-based interactive model rotation and easing.
+- **Post-Processing (`EffectComposer` & `RGBShiftShader`)**: Cyberpunk-style chromatic aberration / RGB color shift effect.
+- **Locomotive Scroll (`^5.0.1`)**: Smooth scroll experience.
+- **Tailwind CSS**: Modern futuristic UI layout and navigation.
+- **Vite (`^8.2.2`)**: Ultra-fast build tool and development server.
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-
 - Node.js (v18 or higher recommended)
 - npm or pnpm
 
 ### Installation
-
 ```bash
-git clone <repository-url>
+git clone https://github.com/faisalali06870-commits/cyberpunk.git
 cd cyberpunk
 npm install
 ```
 
 ### Running Locally
-
 ```bash
 npm run dev
 ```
+Open [http://localhost:5173/](http://localhost:5173/) in your browser.
 
-The application will be available at `http://localhost:5173/`.
-
-### Build for Production
-
+### Production Build
 ```bash
 npm run build
 ```
